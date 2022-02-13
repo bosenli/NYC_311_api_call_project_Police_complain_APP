@@ -9,7 +9,7 @@ Inside that directory, create app.js, index.html, and styles.css files
 Link them up, as well as the jQuery CDN library, and make sure all things are connected correctly!
 The App
 
-Overall, what Dougie and Pizza Rat want for this app is for it to search through the 311 call data (Links to an external site.) provided by the NYC Open Data API (Links to an external site.), and display all the complaints made to the NYPD, filtered by borough. They also want to see how the police responded to the complaint, since that's what they'll use to determine whether or not they can cause the same trouble without consequences!
+Overall, what Dougie and Pizza Rat want for this app is for it to search through the 311 call data (Links to an external site.)https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9 provided by the NYC Open Data API (Links to an external site.)https://opendata.cityofnewyork.us/, and display all the complaints made to the NYPD, filtered by borough. They also want to see how the police responded to the complaint, since that's what they'll use to determine whether or not they can cause the same trouble without consequences!
 
 The Data
 
@@ -18,13 +18,10 @@ For this particular API, NYC Open Data, the data sent after making an AJAX call 
 What is JSON?
 JSON stands for JavaScript Object Notation, which simply just means the data is formatted like the JavaScript objects you've learned about! So, for example, one dataset from the API looks like:
 
-When collapsed:
-
-closeapi
-
 When opened to see all the key value pairs: 
 
-openapi
+![openapi-3](https://user-images.githubusercontent.com/36967751/153768520-102ddac4-5bb7-4df2-9f7e-f304dee399f1.png)
+
 
 Whew, that's a lot of data! For the purposes of our app (more specifics below), however, only some of the key-value pairs are of use to us. Particularly...
 
@@ -38,14 +35,14 @@ While making basic AJAX calls to an API will generally follow the same format, a
 
 For this lab in particular, here are some important pages you may need to look through to do this lab:
 
-The 311 Service Requests API Documentation (Links to an external site.)
+The 311 Service Requests API Documentation (Links to an external site.)https://dev.socrata.com/foundry/data.cityofnewyork.us/fhrw-4uyv
 This page in particular shows an example AJAX call using jQuery, however you'll notice instead of a .then promise, it uses .done -- convert it so that it uses the AJAX call format you learned in class today
-The 311 Service Requests Data Info Page (Links to an external site.)
-Info on how to filter the API Data Being Returned (Links to an external site.)
-Info on how you can Customize the API Queries More Precisely (Links to an external site.)
+The 311 Service Requests Data Info Page (Links to an external site.)https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9
+Info on how to filter the API Data Being Returned (Links to an external site.)https://dev.socrata.com/docs/filtering.html
+Info on how you can Customize the API Queries More Precisely (Links to an external site.)https://dev.socrata.com/docs/queries/
 Now that you're armed with an API and it's documentation, as well as a general idea of what the app should do -- let's finally get onto the specifics of the app!
 
-Minimum Viable Product (MVP)
+##Minimum Viable Product (MVP)
 
 Below is a more detailed list of what functionalities Dougie and Pizza Rat want for their app.
 
